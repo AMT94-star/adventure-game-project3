@@ -20,7 +20,9 @@ public class Main {
         + propertyInfo.getAuthor());
 
         String name = ui.getInput("Ange ditt namn:");
-        Player player = new Player(name, 100, 0, 10);
+        //Player player = new Player(name, 100, 0, 10);
+        Player player= new Player.Builder().name(name).strength(100).score(0)
+                .strength(10).build();
 
         new StartRoom().enterRoom(player, ui);
 
