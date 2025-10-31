@@ -15,6 +15,10 @@ public class Main {
         UI ui = new ScannerUI();
         ui.showMessage("Välkommen till Äventyrsspelet!");
         //ui.showMessage("Version 1.0 av Håkan Gleissman");
+        AppInfo propertyInfo = AppInfo.getInstance();
+        ui.showMessage("Version :" + propertyInfo.getVersion() + " av "
+        + propertyInfo.getAuthor());
+
         String name = ui.getInput("Ange ditt namn:");
         Player player = new Player(name, 100, 0, 10);
 
