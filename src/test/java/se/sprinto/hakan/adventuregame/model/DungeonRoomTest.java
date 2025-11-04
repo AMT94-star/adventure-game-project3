@@ -14,6 +14,18 @@ class DungeonRoomTest {
         fakeUI.setInput("a");
         Player player = new Player.Builder().name("Asli").health(100)
                 .score(0).strength(10).build();
+        Enemy goblin = new Enemy("Goblin",50,10,1);
+
+        if(fakeUI.getInput("a").equals("a")) {
+            while(goblin.isAlive()) {
+                player.attack(goblin);
+                //System.out.println(goblin.getHealth());
+            }
+            if(!goblin.isAlive()) {
+                player.setDefeatedEnemy(true);
+                System.out.println(player.hasDefeatedEnemy());
+            }
+        }
 
     }
 }
