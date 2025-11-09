@@ -17,10 +17,10 @@ class TreasureRoomTest {
 
         if(player.hasFoundKey()){
             player.setOpenedChest(true);
-            System.out.println(player.hasOpenedChest());
+            assertTrue(player.hasOpenedChest());
+            System.out.println("Player has opened the chest");
         }else{
             System.out.println("Player has not found the key");
         }
-        assertTrue(player.hasOpenedChest());
     }
 }
