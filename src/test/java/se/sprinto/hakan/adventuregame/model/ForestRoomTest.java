@@ -3,6 +3,8 @@ package se.sprinto.hakan.adventuregame.model;
 import org.junit.jupiter.api.Test;
 import se.sprinto.hakan.adventuregame.view.FakeUI;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 class ForestRoomTest {
 
     @Test
@@ -22,5 +24,6 @@ class ForestRoomTest {
             player.setFoundKey(false);
             System.out.println(player.hasFoundKey());
         }
+        assertTrue(player.hasFoundKey());
     }
 }

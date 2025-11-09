@@ -26,6 +26,7 @@ class DungeonRoomTest {
                 System.out.println(player.hasDefeatedEnemy());
             }
         }
+        assertTrue(player.hasDefeatedEnemy());
 
     }
 }
