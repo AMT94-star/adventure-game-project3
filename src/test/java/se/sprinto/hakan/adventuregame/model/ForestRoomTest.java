@@ -16,14 +16,6 @@ class ForestRoomTest {
         fakeUI.setInput("ja");
         forestRoom.enterRoom(player, fakeUI);
 
-//        if(fakeUI.getInput("ja").equals("ja")) {
-//            player.setFoundKey(true);
-//            System.out.println(player.getName() + " has found the key");
-//            System.out.println(player.hasFoundKey());
-//        }else{
-//            player.setFoundKey(false);
-//            System.out.println(player.hasFoundKey());
-//        }
         player.setFoundKey(true);
         assertTrue(player.hasFoundKey());
     }
